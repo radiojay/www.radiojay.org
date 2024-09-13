@@ -1,0 +1,17 @@
+:root {
+    --md-primary-fg-color:        #e38739; /* orange-60 */
+    --md-primary-fg-color--light: #f7d4b5; /* orange-80 */
+    --md-primary-fg-color--dark:  #7a4111; /* orange-40 */
+}
+
+.md-typeset ul li, .md-typeset ol li {
+    margin: 0 !important;
+}
+
+.md-typeset {
+    font-size: 0.7rem;
+}
+
+.md-typeset figure {
+    text-align: left;
+}

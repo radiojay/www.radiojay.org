@@ -1,0 +1,35 @@
+site_name: RadioJay
+theme:
+  name: material
+  favicon: jsb-24.png
+  logo: jsb-24.png
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.indexes
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tilde
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search
+
+extra_css:
+  - extra.css
+
+nav:
+  - index.md
+  - "Tags":
+    - tags/index.md
+    - "RadioJay A1": tags/radiojay-a1.md
+    - "RadioJay A2": tags/radiojay-a2.md
+    - "RadioJay G1": tags/radiojay-g1.md
