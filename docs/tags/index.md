@@ -27,16 +27,19 @@ It uses a standard 1.6mm thick PCB which is way too heavy and all components are
 for easy testing with the intent that the components on one half would get "folded under" to the
 other side on the next version, which is what happened for RadioJay A2.
 
-## Test tags
-
-### RadioJay T1
-
-Test tag emitting CTT signals
-
-### RadioJay T2
-
-Test tag emitting both CTT and Lotek signals
-
 ## GPS tags
 
-- [RadioJay G1](radiojay-g1.md)
+The [RadioJay G1](radiojay-g1.md) tag is a first prototype to evaluate GPS performance and
+feasibility.
+
+## Low-Cost Motus test tags
+
+The following tags are not part of the RadioJay series in that they use commercial
+boards but they are similarly open-source and designed to help Motus users with a little DIY.
+
+### Motus CTT + Lotek test tag
+
+The [Motus CTT + Lotek test tag](https://github.com/tve/motus-test-tags) turns a low-cost
+off-the-shelf microcontroller test board into a test tag for Motus. It emits both CTT and Lotek
+"beeps" and helps test proper station operation when setting one up. It also works as
+permanent monitoring tag when left in the vicinity of a station.

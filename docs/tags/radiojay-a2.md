@@ -1,5 +1,7 @@
 # RadioJay A2 Specifications
 
+> One gram tag with altimeter, accelerometer, and extended Motus radio transmission
+
 Background: the V2 tag was produced with two primary goals: to validate the integration of all the components and to prove the ability to meet a 1 gram target. It is a prototype produced on a minimal budget and as such it is expected to have problems, i.e., "room for improvement".
 
 ## Features

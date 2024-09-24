@@ -1,8 +1,8 @@
 site_name: RadioJay
 theme:
   name: material
-  favicon: jsb-24.png
-  logo: jsb-24.png
+  favicon: rj.png
+  logo: rj.png
   features:
     - navigation.instant
     - navigation.tracking
@@ -27,9 +27,17 @@ extra_css:
   - extra.css
 
 nav:
-  - index.md
+  - "Intro": index.md
   - "Tags":
     - tags/index.md
     - "RadioJay A1": tags/radiojay-a1.md
     - "RadioJay A2": tags/radiojay-a2.md
     - "RadioJay G1": tags/radiojay-g1.md
+  - "Whitepapers":
+    - whitepapers/index.md
+    - whitepapers/ultra-lightweight-gps-tags.md
+    - whitepapers/tag-manufacturing-costs.md
+    - whitepapers/Motus-data-tags.md
+  - "AOS 2024":
+    - aos-2024/index.md
+  - about.md

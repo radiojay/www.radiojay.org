@@ -1,5 +1,7 @@
 # RadioJay A1 Prototype
 
+> Altimeter and accelerometer tag prototype with Motus compatible radio transmission
+
 ![RadioJay A1 prototype plugged into prototyping board](radiojay-a1.jpg){width="40%" align="right"}
 The RadioJay A1 prototype served to test:
 

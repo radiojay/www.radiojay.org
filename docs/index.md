@@ -1,29 +1,23 @@
-# Introduction
-
-RadioJay: open-source lighweight tracking tags with radio for birds.
+# Open-source lighweight bird trackers with radio.
 
 ![glossy screen capture](index-pic.jpg){width="40%" align="right"}
 
-The RadioJay project explores the feasibility of "DIY"/open-source lightweight tracking
+The RadioJay project explores the feasibility of DIY open-source lightweight tracking
 tags with radio transmission for tracking birds.
 The primary goal is to be able to experiment with new technologies in order to enable new
 ornithological research in bird migration or other activities.
 
-## Goals
+The [tags](tags) section describes the RadioJay tags made so far. The "A" seriers contains
+an altimeter and accelerometer and transmits the barometric pressure in a [Motus](https://motus.org)
+compatible format. The "G" series explores the use of a GPS, storing the data on-board for
+later transmission via radio.
 
-- Tag weight around 1 gram, depending on features, sub-gram is possible, in others
-  the power requirements may make it impossible with current technology.
-- Compatibility with the [Motus Wildlife tracking system](https://motus.org) where
-  practical and beneficial, but also attempt to inform where new technologies could enhance Motus.
-- Support for sensors, including accelerometer, altimeter, and light meter.
-- Ability to store and pre-process sensor data on-board.
-- Solar battery recharge with sophisticated energy management.
-- Multiple radio technologies, including FSK, LoRa, LoRaWAN, possibly NB-IoT.
-- Transmission of live data as well as uploading of stored/recorded data
-- Support GNSS in both standalone mode as well as snapshot/cloud processing mode.
-- Compatibility with readily available manufacturing services, including low-cost low-volume.
+The [whitepapers](whitepapers) section has short articles describing the various aspects of designing and
+making the tags.
 
-## Licensing
+## AOS 2024 Poster
 
-The tag designs are generally open-source, however, commercial use of the software requires
-a modest license fee, intended to provide funds for the project.
+![AOS 2024 Poster](aos-2024/poster.png){width="40%" align="left"}
+
+Online version of the information for the poster presented at the
+American Ornithological Society annual meeting 2024.
