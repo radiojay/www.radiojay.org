@@ -17,7 +17,7 @@ making the tags.
 
 ## AOS 2024 Poster
 
-![AOS 2024 Poster](aos-2024/poster.png){width="40%" align="left"}
+[![AOS 2024 Poster](aos-2024/poster.png){width="40%" align="left"}](aos-2024)
 
-Online version of the information for the poster presented at the
-American Ornithological Society annual meeting 2024.
+[Online version](aos-2024) of the information for the poster presented at the
+[American Ornithological Society](https://americanornithology.org/) annual meeting 2024.
