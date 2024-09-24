@@ -18,3 +18,7 @@ ornithological research in bird migration or other activities.
 - Transmission of live data as well as uploading of stored/recorded data
 - Support GNSS in both standalone mode as well as snapshot/cloud processing mode.
 - Compatibility with readily available manufacturing services, including low-cost low-volume.
+
+## Contact
+
+For more info please contact Thorsten von Eicken: tve at voneicken dot com.
