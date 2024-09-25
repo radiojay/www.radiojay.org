@@ -40,4 +40,5 @@ nav:
     - whitepapers/Motus-data-tags.md
   - "AOS 2024":
     - aos-2024/index.md
+  - "Related Work": related.md
   - about.md
