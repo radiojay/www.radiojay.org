@@ -1,0 +1,1337 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../tag-manufacturing-costs/">
+      
+      
+        <link rel="next" href="../extending-motus-protocol/">
+      
+      
+      <link rel="icon" href="../../rj.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.41">
+    
+    
+      
+        <title>Motus tags that collect data - RadioJay</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#motus-tags-that-collect-data" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="RadioJay" class="md-header__button md-logo" aria-label="RadioJay" data-md-component="logo">
+      
+  <img src="../../rj.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            RadioJay
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Motus tags that collect data
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="RadioJay" class="md-nav__button md-logo" aria-label="RadioJay" data-md-component="logo">
+      
+  <img src="../../rj.png" alt="logo">
+
+    </a>
+    RadioJay
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intro
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../tags/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Tags
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Tags
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/radiojay-a1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RadioJay A1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/radiojay-a2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RadioJay A2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/radiojay-g1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RadioJay G1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Whitepapers
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Whitepapers
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ultra-lightweight-gps-tags/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ultra-lightweight GPS bird tags
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tag-manufacturing-costs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manufacturing tags and costs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Motus tags that collect data
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Motus tags that collect data
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#adding-some-sensor-data-onto-transmissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding some sensor data onto transmissions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tags-that-store-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tags that store data
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#public-low-power-wide-area-networks-lp-wan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Public Low-Power Wide-Area Networks (LP-WAN)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Public Low-Power Wide-Area Networks (LP-WAN)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#potential-benefits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Potential benefits
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lorawan" class="md-nav__link">
+    <span class="md-ellipsis">
+      LoRaWAN
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sample-energy-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample energy analysis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#public-lorawan-network-coverage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Public LoRaWAN network coverage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lorawan-upload-capacity" class="md-nav__link">
+    <span class="md-ellipsis">
+      LoRaWAN upload capacity
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="LoRaWAN upload capacity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#us915-band-plan-americas" class="md-nav__link">
+    <span class="md-ellipsis">
+      US915 band plan (americas)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="US915 band plan (americas)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sample-calculations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample calculations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eu868-band-plan-europe" class="md-nav__link">
+    <span class="md-ellipsis">
+      EU868 band plan (Europe)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extending-motus-protocol/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Proposal for Extending the Motus CTT packet format
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../aos-2024/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    AOS 2024
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            AOS 2024
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../related/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Related Work
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#adding-some-sensor-data-onto-transmissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding some sensor data onto transmissions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tags-that-store-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tags that store data
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#public-low-power-wide-area-networks-lp-wan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Public Low-Power Wide-Area Networks (LP-WAN)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Public Low-Power Wide-Area Networks (LP-WAN)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#potential-benefits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Potential benefits
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lorawan" class="md-nav__link">
+    <span class="md-ellipsis">
+      LoRaWAN
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sample-energy-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample energy analysis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#public-lorawan-network-coverage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Public LoRaWAN network coverage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lorawan-upload-capacity" class="md-nav__link">
+    <span class="md-ellipsis">
+      LoRaWAN upload capacity
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="LoRaWAN upload capacity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#us915-band-plan-americas" class="md-nav__link">
+    <span class="md-ellipsis">
+      US915 band plan (americas)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="US915 band plan (americas)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sample-calculations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample calculations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eu868-band-plan-europe" class="md-nav__link">
+    <span class="md-ellipsis">
+      EU868 band plan (Europe)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="motus-tags-that-collect-data">Motus tags that collect data</h1>
+<p>The majority of <a href="https://motus.org">Motus</a> tags transmit an ID at a fixed interval,
+typically between 2 and 25 seconds.
+The main piece of information that can be deduced from these transmissions is the presence of the
+tagged animal in the radio range of the receiver at a specific moment in time.
+Some additional information may be able to be gleaned from signal strength, sequence of directional
+antennas that detect the tag, and overall duration of the detections.</p>
+<h2 id="adding-some-sensor-data-onto-transmissions">Adding some sensor data onto transmissions</h2>
+<p>It is tempting to complement the ID with additional data, this would allow the
+reception of a transmission to convey more information.
+One example of additional data is explored in a project focusing on
+<a href="https://motus.org/groups/Atlantic-Offshore-Wind/">tracking birds around offshore wind farms</a>
+where the plan is to add a pressure sensor to tags and transmit the barometric pressure
+together with the tag ID.</p>
+<p>The issue with just tacking some data onto the transmission is that the data will only be collected
+for the transmissions that are received by some station.
+In the case of the offshore wind farms this is likely to work out because stations will be placed on
+turbines, the flight altitude is of most interest near these turbines, and the probability of 
+uninterrupted reception is high.
+Essentially, the data transmitted near stations is of the highest interest and has the highest
+chance of being received.</p>
+<p>The wind farm project seems to be a rather special case where stations can be placed right where
+the data is of highest interest and the obstruction-free ocean facilitates very predictable radio
+coverage.
+However, most bird studies that collect sensor data in addition to location make use of continuous
+data sets for their analysis.
+For example, tracking the activity pattern over days to deduce flight duration, speed,
+as well as stop-over periods.
+This type of continuous data is also used to calculate energy expenditure.
+Altitude profiles are used to understand how migrating birds navigate changing weather conditions as
+well as land profiles, e.g. mountain ranges, and how northbound and southbound migrations differ.</p>
+<p>Tacking some data onto the current tag ID transmissions cannot support this type of study.
+For example, a tag with a 5-second transmission interval sends out more than 3 million data points
+over the course of 6 months, yet, typically at best a dozen of these are received by a very small
+number of Motus stations. It seems inevitable that in most cases researchers need to use tags
+with sensors that store the data on the tag, i.e., act as dataloggers, and then recover the data
+at some later point in time.</p>
+<h2 id="tags-that-store-data">Tags that store data</h2>
+<p>Dataloggers that do not need to be physically retrieved are of great interest and have lead to the
+development of "short range download" radio capabilities where a researcher in the vicinity of the
+animal can download the data over a radio link. This raise the question whether there is a role for
+Motus in this download process, e.g., does it make sense for tags to store the data and transmit
+it to Motus when arriving in range of a station.</p>
+<p>A good case can be made for adding such functionality to Motus, which is that the
+short-range download does not work for species with low site fidelity where the returning bird
+cannot be located and it also does not allow the data to be recovered when a bird leaves the area,
+or when a tag is eventually lost enroute.</p>
+<p>The difficulty with data download is that it requires two-way communication. The tag needs to know
+when it is in range of a station, and it needs to receive acknowledgments so it knows which data
+has been received so it can move on and transmit the next set of data records. Performing this two way communication is a very different mode of operation from current Motus stations which are receive-only.</p>
+<p>The existing 434Mhz hardware in Motus stations could technically be upgraded via software to support
+two-way communication and data download. However, the FCC rules (part 15.231e) for the 400Mhz band
+only support this type of operation at rather low power and require a delay of at least 10 seconds
+between transmissions.
+The result is that this placese severe constraints on the amount of data a tag could download while
+flying by a station.</p>
+<h2 id="public-low-power-wide-area-networks-lp-wan">Public Low-Power Wide-Area Networks (LP-WAN)</h2>
+<p>For this type of long distance radio communication the three technologies that have been
+most widely used are SixFox, LoRaWAN, and NB-IoT.
+Sigfox does not appear to be useful in this context due to extremely low data rates and its
+absense in north america.
+NB-IoT is based on cellular networks and while very interesting because of its
+widespread availability the power requirements exceed what 1 gram tags can support.
+LoRaWAN has been deployed in many regions of the world and addresses lower power devices
+than NB-IoT. It is the best suited for sub-gram bird trackers at this point in time.</p>
+<p>All three technologies are used for public networks, i.e. shared networks to which one can connect one's
+own device to communicate with one's own server. The network operates radio stations as well
+as back-end servers that route packets between users' devices and their application servers.
+In the case of Motus, the devices would be bird tracking tags and the application servers would be the
+Motus back-end servers.</p>
+<p>Most LoRaWAN public networks also support bringing one's own station, which means
+that Motus and researchers can set-up stations in areas of particular interest and these stations
+then supplement the network's existing stations.</p>
+<p>While LoRaWAN is used in public networks it is often also deployed privately. For example,
+municipalities can use a relatively small number of stations to cover a city area and
+use it to collect data from various types of meters and sensors.</p>
+<h3 id="potential-benefits">Potential benefits</h3>
+<p>Remote download of tag data does not require a public network and in fact
+several vendors offer GPS tags with remote download that operate using proprietary stations.
+There are several benefits to using public networks and/or public network technology:</p>
+<ul>
+<li>some data can be uploaded via public stations as birds migrate</li>
+<li>bird migration can be tracked using public network stations allowing researchers to set-up
+  mobile stations close to where the birds end up nesting or foraging, this reduces the guessing
+  around when and where birds migrate to</li>
+<li>in the case of LoRaWAN there is a lot of low-cost station equipment readily available which
+  makes setting up stations simple and economical</li>
+<li>the radio emissions regulations around public networks and their devices have been worked out
+  and software libraries implementing the various requirements are available</li>
+</ul>
+<h2 id="lorawan">LoRaWAN</h2>
+<p>LoRaWAN is an ITU network and modulation standard that has found significant adoption in most parts
+of the world. It is managed by the <a href="https://lora-alliance.org/about-lorawan/">LoRa Alliance</a> and
+enables device manufacturers to create devices independently of the network they end up being
+deployed to. It also enables organizations to deploy their own networks and use off-the-shelf devices.</p>
+<p>LoRaWAN uses radio chips very similar to the 434 Mhz ones Motus currently uses but they operate in the
+900Mhz or 868Mhz range depending on region. The modulation scheme is spread spectrum enabling ranges
+of 20-50 km while using a single simple omnidirectional antenna. The main downside is that the data
+rate is very slow, often 1/10th of the current data rate used by Motus, which means that data
+transmissions use more energy per bit.</p>
+<p>An interesting aspect of LoRaWAN is that public networks have been deployed in several parts of the
+world, which means that a tag could transmit data to existing stations at a very modest cost.
+However, deployment in north america in particular is very spotty and it's not clear whether it
+will grow to become ubiquitous (see coverage maps further down).
+LoRaWAN is used by many local organizations (such as utility
+meters and controls) but often these organizations set-up their own network infrastructure instead
+of contracting with a public network. In general, many long distance tracking applications where
+public networks are needed are more easily served by cellular communications.</p>
+<p>The result is that there could be a very interesting role for Motus in complementing existing
+public LoRaWAN infrastructure by filling in the coverage gaps with stations in areas that are
+of interest to ornithologists.</p>
+<p>The most relevant project to date in the
+<a href="https://animalbiotelemetry.biomedcentral.com/articles/10.1186/s40317-023-00329-y">tracking of Griffon Vultures</a>
+in Portugal and Spain conducted by J. Gauld et. al. from the University of East Anglia.
+They used LoRaWAN tags able to communicate with the public
+<a href="https://www.thethingsnetwork.org">The Things Network</a> but in the end opted to set-up
+their own stations using off-the-shel equipment.</p>
+<p>A new project is underway to
+<a href="https://www.offshore-energy.biz/anglesey-birds-wearing-solar-powered-trackers-to-ensure-safe-tidal-energy-deployment/">track Guillemots</a>
+using LoRaWAN off the coast of Anglesey (Wales) but no detailed information seems to have been published.</p>
+<h2 id="sample-energy-analysis">Sample energy analysis</h2>
+<p>The following table compares the energy consumption of a current Motus tag with a potential
+LoRaWAN tag that stores data. LoRaWAN has the interesting characteristic that the tag can
+decide at which data rate it transmits (there is a simple transmission duration vs. range tradeoff)
+and the table below only shows the duration of a typical 120 byte packet at a "medium" data rate.
+The point of the table is to show how the numbers differ by several orders of magnitude between
+the two types of tags.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Motus tag</th>
+<th>Stored data tag</th>
+<th>Factor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TX frequency</td>
+<td>10 seconds</td>
+<td>15 minutes</td>
+<td>90x</td>
+</tr>
+<tr>
+<td>TX duration</td>
+<td>3 ms</td>
+<td>400 ms</td>
+<td>130x</td>
+</tr>
+<tr>
+<td>TX energy</td>
+<td>0.36mJ</td>
+<td>12.7mJ</td>
+<td>35x</td>
+</tr>
+<tr>
+<td>TX energy/day</td>
+<td>3.1J</td>
+<td>1.2J</td>
+<td>3x</td>
+</tr>
+<tr>
+<td>battery capacity</td>
+<td>100J(est)</td>
+<td>7.2J</td>
+<td>15x</td>
+</tr>
+</tbody>
+</table>
+<p>(1J = 1 Joule = 1 Watt-second = 1/3.6 mWh)</p>
+<p>The way a tag would work (this is how the LoRaWAN GPS bio-loggers deployed on Griffon Vultures
+by J. Gauld et. al., U. of East Anglia worked) is as follows:</p>
+<ul>
+<li>the tag infrequently transmits an ID packet at a slow but long range data rate</li>
+<li>if a station receives the packet it responds with signal strength info (and records the detection
+  of the tag)</li>
+<li>if the signal strength is too low to support a faster data rate the tag continues to probe the
+  station at a slightly faster rate</li>
+<li>if the tag is close enough to the station it starts transmitting data at the highest reliable
+  data rate, possibly switching data rate as it gets closer and then further away again</li>
+</ul>
+<h2 id="public-lorawan-network-coverage">Public LoRaWAN network coverage</h2>
+<p>The following maps compare the coverage of several public LoRaWAN networks (with a US focus) and
+also show the corresponding Motus coverage.
+It is very evident from the maps that the public networks focus on populated areas and specifically
+on logistics hubs.
+In contrast, Motus stations focus on areas where birds are expected to be present or migrate through.</p>
+<p>Note that Amazon Sidewalk uses the same radio technology as LoRaWAN but uses a different
+set of network protocols. It is not clear at this point whether it could be used for bird tracking,
+i.e., whether the required Amazon certification could be obtained.
+It is also only deployed in the US at this stage.</p>
+<p>(Click on the maps to reach the official coverage map. Note that the Everynet map shows "possible
+coverage" in the light shade.)</p>
+<p><a href="https://ttnmapper.org/heatmap/"><img alt="The Things Network EU coverage map" src="../ttn-eu-coverage.png" width="45%" /></a>
+<a href="https://coverage.sidewalk.amazon/"><img alt="Amazon Sidewalk coverage map" src="../sidewalk-coverage.png" width="45%" /></a>
+<a href="https://coverage.sh/everynet?z=3.76&amp;lat=45.34830&amp;lng=-93.84699"><img alt="Everynet coverage map" src="../everynet-coverage.png" width="45%" /></a>
+<a href="https://ttnmapper.org/heatmap/"><img alt="The Things Network US coverage map" src="../ttn-us-coverage.png" width="45%" /></a>
+<a href="https://motus.org/dashboard/#"><img alt="Motus US coverage map" src="../motus-coverage.png" width="45%" /></a></p>
+<p>To-do: figure out whether the Helium network is an option.</p>
+<h2 id="lorawan-upload-capacity">LoRaWAN upload capacity</h2>
+<p>This section analyses how much data a tag can transmit per minute.
+The idea is that a bird flies by a station and is in radio range anywhere
+from a couple of minutes to 30-40 minutes.
+During this time the tag can upload data to servers but the data quantity that can be uploaded
+is limited by the transit time, tha data rate that can be achieved, and regulatory limitations.
+The question is whether it is reasonable to expect a significant proportion of the stored data
+to be uploaded or whether only a subset can be expected.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This section is work-in-progress.</p>
+</div>
+<h3 id="us915-band-plan-americas">US915 band plan (americas)</h3>
+<p>In the US LoRaWAN offers the following for uplinks:</p>
+<ul>
+<li>Modulation parameters SF7BW125 through SF10BW125, typ 8 channels, 400ms max dwell time
+  per channel</li>
+<li>Also available: SF8BW500, typ. 1 channel</li>
+</ul>
+<p>Maximum payload size per data rate and resulting maximum data transferred per minute, assuming a 400ms packet every second:</p>
+<table>
+<thead>
+<tr>
+<th>DR</th>
+<th>params</th>
+<th>app payload</th>
+<th>KB/minute</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>SF10BW125</td>
+<td>11</td>
+<td>0.6</td>
+</tr>
+<tr>
+<td>1</td>
+<td>SF9BW125</td>
+<td>53</td>
+<td>3</td>
+</tr>
+<tr>
+<td>2</td>
+<td>SF8BW125</td>
+<td>125</td>
+<td>7</td>
+</tr>
+<tr>
+<td>3</td>
+<td>SF7BW125</td>
+<td>222</td>
+<td>13</td>
+</tr>
+<tr>
+<td>4</td>
+<td>SF8BW500</td>
+<td>222</td>
+<td>26</td>
+</tr>
+</tbody>
+</table>
+<h4 id="sample-calculations">Sample calculations</h4>
+<ul>
+<li>GPS fix represented using 10 bytes</li>
+<li>Snapshot GPS recording represented using 48 bytes</li>
+<li>Assume 10 minute periods, for example, a bird may fly by a station in 30 minutes and have 10 minutes
+  at each of DR 0, 2, and 4.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>DR</th>
+<th>Fixes/10min</th>
+<th>Recordings/10min</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>300</td>
+<td>64</td>
+</tr>
+<tr>
+<td>3</td>
+<td>1300</td>
+<td>225</td>
+</tr>
+<tr>
+<td>4</td>
+<td>2600</td>
+<td>550</td>
+</tr>
+</tbody>
+</table>
+<h3 id="eu868-band-plan-europe">EU868 band plan (Europe)</h3>
+<ul>
+<li>Modulation parameters SF7BW125 through SF12BW125, typ 8 channels, 1% duty cycle per sub-band (2)</li>
+<li>Also available: FSK, type 1 channel, 0.1% max duty cycle</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>DR</th>
+<th>params</th>
+<th>app payload</th>
+<th>air time</th>
+<th>KB/minute</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>SF12BW125</td>
+<td>51</td>
+<td>2794ms</td>
+<td>0.02</td>
+</tr>
+<tr>
+<td>1</td>
+<td>SF11BW125</td>
+<td>51</td>
+<td>1561ms</td>
+<td>0.04</td>
+</tr>
+<tr>
+<td>2</td>
+<td>SF10BW125</td>
+<td>51</td>
+<td>698ms</td>
+<td>0.08</td>
+</tr>
+<tr>
+<td>3</td>
+<td>SF9BW125</td>
+<td>115</td>
+<td>677ms</td>
+<td>0.2</td>
+</tr>
+<tr>
+<td>4</td>
+<td>SF8BW125</td>
+<td>242</td>
+<td>215ms</td>
+<td>1.3</td>
+</tr>
+<tr>
+<td>5</td>
+<td>SF7BW125</td>
+<td>242</td>
+<td>118ms</td>
+<td>2.4</td>
+</tr>
+<tr>
+<td>7</td>
+<td>FSK 50kbps</td>
+<td>242</td>
+<td>42ms</td>
+<td>0.34</td>
+</tr>
+</tbody>
+</table>
+<p>The above table assumes the duty cycle limits as they apply to The Things Network bandplan.
+There is an alternative, which is listen-before-talk that removes the duty cycle limitation,
+it is not clear what the ramifications of this option are.
+In addition, there is a relatively new (2020?) allocation without duty cycle limitation but with
+transmit power limitations in a portion of the band not used by The Things Network and it could
+be used by privately set-up stations. (It's complex!)</p>
+<p>References:</p>
+<ul>
+<li><a href="https://resources.lora-alliance.org/technical-specifications/rp002-1-0-4-regional-parameters">LoRaWAN regional parameters</a></li>
+<li><a href="https://www.thethingsnetwork.org/docs/lorawan/">The Things Network fundamentals</a>
+  <a href="https://www.thethingsnetwork.org/docs/lorawan/frequency-plans/">TTN frequency plans</a></li>
+<li><a href="https://www.ecfr.gov/current/title-47/chapter-I/subchapter-A/part-15/subpart-C/subject-group-ECFR2f2e5828339709e/section-15.247">FCC title 47 section 15.247</a></li>
+<li><a href="https://www.etsi.org/deliver/etsi_en/300200_300299/30022002/03.01.01_60/en_30022002v030101p.pdf">ETSI EN 300 220-2</a> (Annex B is the most readable)</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.indexes"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>
