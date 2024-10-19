@@ -8,3 +8,5 @@
   can be manufactured.
 - [Motus tags that collect data](Motus-data-tags.md) looks into the options for adding sensors that
   collect data to Motus tags and how this data can later be transmitted to Motus stations.
+- [Proposal for extending the CTT packet format](extending-motus-protocol.md) in order to add data
+  to each transmission in a backwards-compatible manner.
